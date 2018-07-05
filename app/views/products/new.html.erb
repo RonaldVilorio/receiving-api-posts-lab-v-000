@@ -25,9 +25,9 @@
       var posting = $.post('/posts', values);
 
       posting.done(function(data) {
-        var post = data;
+        var product = data;
         $("#productDescription").text(product["description"]);
-        $("#postBody").text(post["description"]);
+
       });
     });
   });
